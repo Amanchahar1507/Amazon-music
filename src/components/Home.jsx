@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import Podcast from './Pages/Podcast';
+import FeaturedThisWeek from './Pages/FeaturedThisWeek';
 
 const Home = () => {
   return (
@@ -11,6 +12,9 @@ const Home = () => {
         </div>
         <div className="flex mt-10">
           <Podcast/>
+          </div>
+        <div className="flex mt-10">
+          <FeaturedThisWeek/>
           </div>
         <div>
            <Footer/>
