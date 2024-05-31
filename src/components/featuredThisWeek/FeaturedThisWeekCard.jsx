@@ -11,12 +11,12 @@ const FeaturedThisWeekCard = ({ images, name, type }) => {
         )}
       </div>
       <div className="flex mt-16 text-xl font-bold">
-        {/* {name} */}
-        name
+        {name}
+        {/* name */}
       </div>
       <div className="flex mb-0 text-gray-500">
-        {/* {type} */}
-        type
+        {type}
+        {/* type */}
       </div>
     </div>
   );

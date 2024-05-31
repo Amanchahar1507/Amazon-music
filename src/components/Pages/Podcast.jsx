@@ -1,15 +1,47 @@
 import React from 'react'
 import PodcastCard from '../podcast/PodcastCard'
+import { useState,useEffect } from 'react';
+import { baseApi } from '../../api/axiosInstance';
+import { Link } from 'react-router-dom';
 
 const Podcast = () => {
+  const [artists,setArtist] = useState(null);
+
+  const fetchAllArtist = async () =>{
+      try{
+        const artists = await baseApi.get("/artist_related",{
+          params:{
+            id :'2w9zwq3AktTeYYMuhMjju8'
+          }
+        })
+        
+        setArtist(artists.data.artists)
+      }
+      catch(error){
+        console.log("Error in fetching artist",error)
+      }
+  }
+
+  useEffect(() => {
+    fetchAllArtist();
+
+  }, [])
+
   return (
     <div className="flex flex-col">
-      <div className="flex mt-30">
-        Recent Podcast
-        </div>
-        <div className="mt-5 ml-5 bg-white text-black">
-        <PodcastCard/>
-        </div>
+      <div className="mt-36 ml-80 font-bold text-4xl ">
+      <Link to="/podcast"><h2>Podcast</h2></Link>
+      </div>
+        <div className="mt-36 ml-96 flex flex-wrap gap-4">
+        {artists && artists.map((artist) => (
+          <PodcastCard 
+            key={artist.id} 
+            images={artist.images} 
+            name={artist.name} 
+            type={artist.type} 
+          />
+        ))}
+      </div>
     </div>
   )
 }
