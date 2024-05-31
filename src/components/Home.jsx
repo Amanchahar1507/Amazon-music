@@ -3,6 +3,8 @@ import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import Podcast from './Pages/Podcast';
 import FeaturedThisWeek from './Pages/FeaturedThisWeek';
+import TrendingPlaylist from './Pages/TrendingPlaylist';
+import Album from './Pages/Album';
 
 const Home = () => {
   return (
@@ -15,6 +17,12 @@ const Home = () => {
           </div>
         <div className="flex mt-10">
           <FeaturedThisWeek/>
+          </div>
+        <div className="flex mt-10">
+          <TrendingPlaylist/>
+          </div>
+        <div className="flex mt-10">
+          <Album/>
           </div>
         <div>
            <Footer/>

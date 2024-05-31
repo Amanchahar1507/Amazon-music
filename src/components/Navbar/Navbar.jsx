@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../photo/logo.jpg';
 import { FaUser } from 'react-icons/fa';
-
+// import {Link} from 'react';
 const Navbar = () => {
   return (
     <div className="flex flex-row items-center justify-between w-full px-4">
@@ -18,6 +18,7 @@ const Navbar = () => {
                 placeholder='Search...'
                 className="px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300"
             />
+            {/* <Link to="/signup"><FaUser className="text-2xl" /></Link> */}
             <FaUser className="text-2xl" />
         </div>
     </div>
