@@ -1,12 +1,13 @@
-// THIS IS PODCAST CARD OR WE SAY HOW IT DISPLAY ON THE SCREEN WE MADE THIS TO DEMO CARD
-// FOR THE PODCAST..........
+// THIS IS LIBRARY CARD OR WE SAY HOW IT DISPLAY ON THE SCREEN WE MADE THIS TO DEMO CARD
+// FOR THE LIBRARY..........
 
 import React from 'react';
 
-const PodcastCard = ({ images, name, type }) => {
+const LibraryCard = ({ images, name, type }) => {
   return (
     <div className="bg-white px-12 py-16 rounded-[12px] text-black shadow-md hover:shadow-lg">
       <div>
+
         {/* THIS DISPLAY IMAGE IF IMAGE AVAILABLE OTHERWISE DISPLAY NO IMAGE AVAILABLE */}
         {images && images.length > 0 ? (
           <img src={images[0].url} alt={name} className="rounded-full w-32 h-32" />
@@ -26,5 +27,5 @@ const PodcastCard = ({ images, name, type }) => {
   );
 };
 
-export default PodcastCard;
+export default LibraryCard;
 

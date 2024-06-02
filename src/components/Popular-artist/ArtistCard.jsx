@@ -1,9 +1,13 @@
+// THIS IS ARTIST CARD OR WE SAY HOW IT DISPLAY ON THE SCREEN WE MADE THIS TO DEMO CARD
+// FOR THE ARTIST..........
 import React from 'react';
 
 const ArtistCard = ({ images, name, type }) => {
   return (
     <div className="bg-white px-20 py-20 rounded-[12px] text-black">
       <div>
+
+      {/* THIS DISPLAY IMAGE IF IMAGE AVAILABLE OTHERWISE DISPLAY NO IMAGE AVAILABLE */}
         {images && images.length > 0 ? (
           <img src={images[0].url} alt={name} className="rounded-full w-32 h-32" />
         ) : (

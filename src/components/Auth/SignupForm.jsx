@@ -1,3 +1,6 @@
+// IN THIS WE MAKING A SIGNUP FORM AND MAKE ALL FUNCTIONALITY AND EXPORT THIS TO SIGNUP PAGE..
+
+
 import React from 'react'
 import FormInput from '../../ui/FormInput'; 
 import { useState } from 'react';
@@ -13,6 +16,8 @@ const SignupForm = () => {
         password : '',
         number : ''
     })
+
+//  IN THIS WE USING FIREBASE FOR AUTHENTICATION AND ADD THE NEW DATA OR NEW USER...
 
     const addUser = async() =>{
         try{
@@ -106,7 +111,7 @@ const SignupForm = () => {
                 />
 
                 <Button primaryColor={"black"} background={"green"} borderColor={"black"} className="text-bold hover:bg-red-500" >Submit</Button>
-                {/* <button>Submit</button> */}
+                
             </form>
 
         </div>

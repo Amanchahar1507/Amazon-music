@@ -1,3 +1,6 @@
+// IN THIS WE MAKING A LOGIN FORM AND MAKE ALL FUNCTIONALITY AND EXPORT THIS TO LOGIN PAGE..
+
+
 import React from 'react'
 import FormInput from '../../ui/FormInput'
 import { useState } from 'react';
@@ -37,6 +40,9 @@ const LoginForm = () => {
             setUsers(userArray);
         })
     }
+
+    // IN THIS WE USING A FIREBASE TO CHECK THE USER AUTHENTICATE OR NOT IT MATCH THE
+    // USER DATA TO STORED DATA IF IT MATCH USER LOGIN IN IT OTHERWISE INVALID CREDENTIALS.... 
 
     const checkUserCredentials = () =>{
         getAllUsers();
