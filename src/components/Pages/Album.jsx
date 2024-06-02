@@ -34,7 +34,7 @@ const Album = () => {
   }, [])
   return (
     <div className="flex flex-col">
-      <div className="mt-24 ml-32 font-bold text-4xl ">
+      <div className="mt-24 ml-12 font-bold text-4xl ">
       <Link to="/album"><h2 className="ml-10">Album</h2></Link>
       </div>
         <div className="mt-24 ml-32 mr-12 flex flex-wrap gap-4">

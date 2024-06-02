@@ -35,8 +35,8 @@ const Library = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="mt-24 ml-36 font-bold text-4xl ">
-      <Link to="/podcast"><h2>Podcast</h2></Link>
+      <div className="mt-24 ml-12 font-bold text-4xl ">
+      <Link to="/podcast"><h2 className="ml-10">Library</h2></Link>
       </div>
         <div className="mt-24 ml-32 mr-12 flex flex-wrap gap-4">
 

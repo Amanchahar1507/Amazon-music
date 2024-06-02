@@ -34,8 +34,8 @@ const TrendingPlaylist = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="mt-36 ml-80 font-bold text-4xl ">
-      <Link to="/trendingplaylist"><h2>TrendingPlaylist</h2></Link>
+      <div className="mt-24 ml-12 font-bold text-4xl ">
+      <Link to="/trendingplaylist"><h2 className="ml-10">TrendingPlaylist</h2></Link>
       </div>
         <div className="mt-24 ml-32 mr-12 flex flex-wrap gap-4">
 

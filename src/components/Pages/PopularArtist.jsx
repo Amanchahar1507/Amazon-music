@@ -34,8 +34,8 @@ const PopularArtist = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="mt-24 ml-36 font-bold text-4xl ">
-      <Link to="/popularartist"><h2>PopularArtist</h2></Link>
+      <div className="mt-24 ml-12 font-bold text-4xl ">
+      <Link to="/popularartist"><h2 className="ml-10">PopularArtist</h2></Link>
       </div>
       <div className="mt-24 ml-32 mr-12 flex flex-wrap gap-4">
 

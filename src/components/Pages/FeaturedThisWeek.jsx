@@ -34,8 +34,8 @@ const FeaturedThisWeek = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="mt-36 ml-80 font-bold text-4xl ">
-      <Link to="/featuredthisweek"><h2>Featured This Week</h2></Link>
+      <div className="mt-24 ml-12 font-bold text-4xl ">
+      <Link to="/featuredthisweek"><h2 className="ml-10">Featured This Week</h2></Link>
       </div>
         <div className="mt-24 ml-32 mr-12 flex flex-wrap gap-4">
           {/* HERE WE CALL FEATUREDTHISWEEKCARD FOR SHOWING THE INFORMATION WE FETCH FROM THE API.. */}
